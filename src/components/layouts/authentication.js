@@ -1,16 +1,19 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import {
   Flex,
   Box,
   Image
 } from "@chakra-ui/core";
 import logo1x from '../../logos/showflix-logo-black-1x.png';
+import { Helmet } from "react-helmet";
 
 
-export default function AuthticationLayout({ children }) {
+export default function AuthenticationLayout({ children, title }) {
   return (
     <>
+      <Helmet>
+          <title>{title}</title>
+      </Helmet>
       <Flex flexDirection="row">
         <Flex margin='auto'>
           <Box w="400px" marginTop="100px">
@@ -27,7 +30,3 @@ export default function AuthticationLayout({ children }) {
     </>
   );
 }
-
-AuthticationLayout.propTypes = {
-  children: PropTypes.element.isRequired
-};
