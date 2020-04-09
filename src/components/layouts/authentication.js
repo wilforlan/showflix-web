@@ -5,15 +5,12 @@ import {
   Image
 } from "@chakra-ui/core";
 import logo1x from '../../logos/showflix-logo-black-1x.png';
-import { Helmet } from "react-helmet";
-
+import PageTitle from "../common/page-title";
 
 export default function AuthenticationLayout({ children, title }) {
   return (
     <>
-      <Helmet>
-          <title>{title}</title>
-      </Helmet>
+      <PageTitle title={title} />
       <Flex flexDirection="row">
         <Flex margin='auto'>
           <Box w="400px" marginTop="100px">
