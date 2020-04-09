@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AuthticationLayout from "../components/layouts/authentication";
+import AuthenticationLayout from "../components/layouts/authentication";
 import {
   FormControl,
   FormLabel,
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 class SignIn extends Component {
     render() {
         return (
-           <AuthticationLayout>
+           <AuthenticationLayout title="Sign In - ShowFlix">
             <FormControl>
                 <FormLabel htmlFor="email">Email Address</FormLabel>
                 <Input placeholder="john@doe.com" type='email' id="email" />
@@ -28,25 +28,25 @@ class SignIn extends Component {
                 <Button
                     ml="auto"
                     mt={4}
-                    variantColor="grey.600"
+                    variantColor="teal"
                     type="submit"
                     rightIcon={FiArrowRight}
                     variant="outline"
                 >
-                    Sign In
+                    <Link to="/home">Sign In</Link>
                 </Button>
 
                 <Button
                     mr="auto"
                     mt={4}
-                    variantColor="gray"
+                    variantColor="teal"
                     type="submit"
                     _hover={{ bg: "black", color: "white" }}
                 >
                     <Link to="/register">Create Account</Link>
                 </Button>
             </Flex>
-           </AuthticationLayout>
+           </AuthenticationLayout>
         )
     }
 }

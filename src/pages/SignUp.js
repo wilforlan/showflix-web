@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 class SignUp extends Component {
     render() {
         return (
-           <AuthticationLayout>
+           <AuthticationLayout title="Create Account - ShowFlix">
             <FormControl>
                 <FormLabel htmlFor="name">Name</FormLabel>
                 <Input placeholder="John Doe" type='text' id="name" />
@@ -33,7 +33,7 @@ class SignUp extends Component {
                 <Button
                     ml="auto"
                     mt={4}
-                    variantColor="grey.600"
+                    variantColor="teal"
                     type="submit"
                     rightIcon={FiArrowRight}
                     variant="outline"
@@ -44,7 +44,7 @@ class SignUp extends Component {
                 <Button
                     mr="auto"
                     mt={4}
-                    variantColor="gray"
+                    variantColor="teal"
                     type="submit"
                     _hover={{ bg: "black", color: "white" }}
                 >
